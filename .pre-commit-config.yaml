@@ -1,10 +1,12 @@
 repos:
--   repo: https://github.com/MarketSquare/robotframework-tidy
+  - repo: https://github.com/MarketSquare/robotframework-tidy
     rev: main
     hooks:
-    -   id: robotidy
+      - id: robotidy
+        files: \.robot$   # Match any file ending in .robot, anywhere
 
--   repo: https://github.com/psf/black
+  - repo: https://github.com/psf/black
     rev: 22.3.0
     hooks:
-    - id: black
+      - id: black
+        files: \.py$      # Match any .py file, anywhere

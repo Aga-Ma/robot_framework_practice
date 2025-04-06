@@ -10,35 +10,35 @@ Should be able to add new customer
 
     # open the browser
     Log    Starting the test case!
-    Open browser    https://automationplayground.com/crm/    chrome
+    Open Browser    https://automationplayground.com/crm/    chrome
 
     # resize browser window for recording
-    Set window size    width=1935    height=1090
+    Set Window Size    width=1935    height=1090
 
-    Wait until page contains    Customers Are Priority One
+    Wait Until Page Contains    Customers Are Priority One
 
-    Click link    id=SignIn
-    Wait until page contains    Login
+    Click Link    id=SignIn
+    Wait Until Page Contains    Login
 
-    Input text    id=email-id    admin@robotframeworktutorial.com
-    Input text    id=password    qwe
-    Click button    id=submit-id
-    Wait until page contains    Our Happy Customers
+    Input Text    id=email-id    admin@robotframeworktutorial.com
+    Input Text    id=password    qwe
+    Click Button    id=submit-id
+    Wait Until Page Contains    Our Happy Customers
 
-    Click link    id=new-customer
-    Wait until page contains    Add Customer
+    Click Link    id=new-customer
+    Wait Until Page Contains    Add Customer
 
-    Input text    id=EmailAddress    janedoe@gmail.com
-    Input text    id=FirstName    Jane
-    Input text    id=LastName    Doe
-    Input text    id=City    Dallas
-    Select from list by value    id=StateOrRegion    TX
-    Select radio button    gender    female
-    Select checkbox    name=promos-name
-    Click button    Submit
-    Wait until page contains    Success! New customer added.
+    Input Text    id=EmailAddress    janedoe@gmail.com
+    Input Text    id=FirstName    Jane
+    Input Text    id=LastName    Doe
+    Input Text    id=City    Dallas
+    Select From List By Value    id=StateOrRegion    TX
+    Select Radio Button    gender    female
+    Select Checkbox    name=promos-name
+    Click Button    Submit
+    Wait Until Page Contains    Success! New customer added.
 
-    Click link    Sign Out
-    Wait until page contains    Signed Out
+    Click Link    Sign Out
+    Wait Until Page Contains    Signed Out
 
-    Close browser
+    Close Browser

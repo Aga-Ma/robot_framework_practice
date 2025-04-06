@@ -1,0 +1,6 @@
+[tool.robotidy]
+overwrite = true
+spacecount = 4
+transform = [
+    "RenameKeywords",
+]

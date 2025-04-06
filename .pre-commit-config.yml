@@ -1,0 +1,4 @@
+-   repo: https://github.com/MarketSquare/robotframework-tidy
+    rev: stable
+    hooks:
+      - id: robotidy

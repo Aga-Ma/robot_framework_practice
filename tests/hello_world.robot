@@ -1,5 +1,3 @@
-*** Settings ***
-
 *** Test Cases ***
 Hello World
-    log to console    Hello world!
+    Log To Console    Hello world!

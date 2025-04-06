@@ -1,0 +1,1 @@
+call pytest  --robot-variable=BROWSER:edge --robot-outputdir=results/edge

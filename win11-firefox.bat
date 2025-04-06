@@ -1,0 +1,1 @@
+call pytest  --robot-variable=BROWSER:ff -d --robot-outputdir=results/firefox

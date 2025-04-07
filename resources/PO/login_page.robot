@@ -1,10 +1,18 @@
 *** Settings ***
 Library     SeleniumLibrary
 
+*** Variables ***
+${EMAIL_FIELD}      id=email-id
+${PASSWORD_FIELD}       id=password
+${SUBMIT_BUTTON}        id=submit-id
+
+
 *** Keywords ***
+Login Page Is Open
+    Wait Until Page Contains    Login
+
 Login To Automationplayground
     [Arguments]    ${login}    ${pass}
-    Input Text     id=email-id    ${login}
-    Input Text     id=password    ${pass}
-    Click Button   id=submit-id
-    Wait Until Page Contains    Our Happy Customers
+    Input Text     ${EMAIL_FIELD}    ${login}
+    Input Text     ${PASSWORD_FIELD}    ${pass}
+    Click Button   ${SUBMIT_BUTTON}

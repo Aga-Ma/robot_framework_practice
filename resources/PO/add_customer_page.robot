@@ -2,7 +2,7 @@
 Library     SeleniumLibrary
 
 *** Keywords ***
-Fill New Customer Adding Form
+Fill New Customer Form
     [Arguments]    ${email}    ${firstname}    ${lastname}    ${city}    ${state}    ${gender}
 
     Input Text    id=EmailAddress    ${email}
@@ -15,4 +15,6 @@ Fill New Customer Adding Form
 
 Submit Customer Form
     Click Button    Submit
+
+Customer Creation Succeeds
     Wait Until Page Contains    Success! New customer added.

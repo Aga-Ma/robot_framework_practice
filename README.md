@@ -7,5 +7,5 @@ This repository mixes procedural and behavior driven development approach as it 
 no reason for separate repositories creation. Hence, that causes some robot code duplication. And I can live with that
 as it is created only for training purpose. I would never do something like this in the actual project.
 
-In addition, I am in favor of separating page objects and related assertions, but resigned from refactoring as it was
+In addition, I am in favor of separating page objects and assertions, but resigned from refactoring as it was not
 the course goal.

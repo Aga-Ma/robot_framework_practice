@@ -4,6 +4,7 @@ Resource    PO/add_customer_page.robot
 
 
 *** Keywords ***
+#behavior
 The User Fills The 'New Customer' Form
     [Arguments]    ${email}    ${firstname}    ${lastname}    ${city}    ${state}    ${gender}
     Click Add New Customer

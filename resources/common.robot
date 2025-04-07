@@ -1,14 +1,15 @@
 *** Settings ***
 Library     SeleniumLibrary
-Resource    PO/home_page.robot
+Resource    PO/landing_page.robot
 
 
 *** Variables ***
 ${BROWSER}      chrome
+${URL}          https://automationplayground.com/crm/
 
 
 *** Keywords ***
 Go To Automationplaygraound
-    Open Browser    https://automationplayground.com/crm/    ${BROWSER}
+    Open Browser    ${URL}    ${BROWSER}
     Set Window Size    width=1935    height=1090
-    Home Page Is Open
+    Landing Page Is Open

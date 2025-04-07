@@ -10,6 +10,6 @@ def pytest_configure(config):
 
     os.makedirs(config.option.robot_outputdir, exist_ok=True)
 
-    config.option.robot_log = f"{config.option.robot_log}_{timestamp}"
-    config.option.robot_report = f"{config.option.robot_report}_{timestamp}"
-    config.option.robot_output = f"{config.option.robot_output}_{timestamp}"
+    config.option.robot_log = f"{timestamp}_{config.option.robot_log}"
+    config.option.robot_report = f"{timestamp}_{config.option.robot_report}"
+    config.option.robot_output = f"{timestamp}_{config.option.robot_output}"

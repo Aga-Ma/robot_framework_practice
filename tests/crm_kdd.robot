@@ -1,9 +1,9 @@
 *** Settings ***
-Resource    resources/crm/common.robot
-Resource    resources/crm/PO/login_page.robot
-Resource    resources/crm/PO/customers_page.robot
-Resource    resources/crm/PO/topnav_component.robot
-Resource    resources/crm/PO/add_customer_page.robot
+Resource    ../resources/crm/common.robot
+Resource    ../resources/crm/PO/login_page.robot
+Resource    ../resources/crm/PO/customers_page.robot
+Resource    ../resources/crm/PO/topnav_component.robot
+Resource    ../resources/crm/PO/add_customer_page.robot
 Suite Setup       Go To Automationplaygraound
 Suite Teardown    Close Browser
 

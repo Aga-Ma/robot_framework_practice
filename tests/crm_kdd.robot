@@ -8,6 +8,8 @@ Suite Setup       Go To Automationplaygraound
 Suite Teardown    Close Browser
 
 *** Variables ***
+# This is test data, to test app. You can log there with ANYTHING that has a correct email format and make up the password.
+# I would not bother to hide them.
 ${VALID_LOGIN}       admin@robotframeworktutorial.com
 ${VALID_PASSWARD}    qwe
 ${INVALID_LOGIN}       admin

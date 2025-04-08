@@ -1,8 +1,8 @@
 *** Settings ***
-Resource    resources/PO/topnav_component.robot
-Resource    resources/common.robot
-Resource    resources/user_action.robot
-Resource    resources/new_customer_creation.robot
+Resource    resources/crm/PO/topnav_component.robot
+Resource    resources/crm/common.robot
+Resource    resources/crm/user_action.robot
+Resource    resources/crm/new_customer_creation.robot
 Suite Setup       Go To Automationplaygraound
 Suite Teardown    Close Browser
 
